@@ -1,3 +1,4 @@
+@Background
 Feature: Amazon Search
   Background: Ortak adimlar
     Given Kullanici amazon sayfasina gider
