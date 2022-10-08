@@ -5,9 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import utilities.Driver;
 
-import javax.swing.*;
-
-public class AmazonStepdefinition {
+public class AmazonStepDefinition {
 
     @Given("Kullanici amazon sayfasina gider")
     public void kullaniciAmazonSayfasinaGider() {
