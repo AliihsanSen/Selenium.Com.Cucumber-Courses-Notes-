@@ -13,6 +13,7 @@ import org.junit.runner.RunWith;
 )
 
 public class Runner {
+
 /**
 Runner Class'ı TestNG'deki XMl mantığı ile çalışır. Çalıştırmak istediğimiz senartolara tag belirtiriz
 ve belirttiğimiz tag'ları çalıştırır. XMl deki gibi istediğimiz testleri çalıştırmak için kullanırız.
@@ -31,4 +32,5 @@ dryRun : iki seçenek vardır
 dryRun = true; dersek testimizi çalıştırmadan eksik adımları bize verir
 dryRun = false; testlerimizi driver ile çalıştırır.
      */
+
 }
