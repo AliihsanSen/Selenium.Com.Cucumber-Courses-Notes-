@@ -1,5 +1,6 @@
 Feature: Amazon Search
 
+  @gp1
   Scenario: TC01 Kullanıcı amazonda nutella aratır
 
     Given Kullanici amazon sayfasina gider
@@ -14,6 +15,7 @@ Feature: Amazon Search
     And Sonuclarin Selenium icerdigini test eder
     And Sayfayi kapatir.
 
+  @gp2
   Scenario: TC03 Kullanıcı amazonda iphone aratır
 
     Given Kullanici amazon sayfasina gider
