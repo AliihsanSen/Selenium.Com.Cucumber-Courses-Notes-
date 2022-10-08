@@ -13,3 +13,10 @@ Feature: Amazon Search
     Then Kullanici Selenium icin arama aratir
     And Sonuclarin Selenium icerdigini test eder
     And Sayfayi kapatir.
+
+  Scenario: TC03 Kullanıcı amazonda iphone aratır
+
+    Given Kullanici amazon sayfasina gider
+    Then Kullanici iphone icin arama aratir
+    And Sonuclarin iphone icerdigini test eder
+    And Sayfayi kapatir.
