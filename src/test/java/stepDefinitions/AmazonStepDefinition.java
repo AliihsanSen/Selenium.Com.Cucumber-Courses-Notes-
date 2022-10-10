@@ -66,4 +66,16 @@ public class AmazonStepDefinition {
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
 
     }
+
+    @Then("Kullanici {string} icin arama aratir")
+    public void kullaniciIcinAramaAratir(String arananKelime) {
+        amazonPage.aramaKutusu.sendKeys(arananKelime, Keys.ENTER);
+    }
+
+    @And("sonuclarin {string} icerdigini test eder")
+    public void sonuclarinIcerdiginiTestEder(String arg0) {
+        String arananKelime = arg0;
+        String actualAramaSonucStr = amazonPage.aramaSonucElementi.getText();
+        Assert.assertTrue(actualAramaSonucStr.contains(arg0));
+    }
 }
