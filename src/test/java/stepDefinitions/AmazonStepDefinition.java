@@ -89,4 +89,9 @@ public class AmazonStepDefinition {
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(istenenUrl));
     }
+
+    @Then("Kullanici {int} saniye bekler")
+    public void kullaniciSaniyeBekler(int istenenSure) throws InterruptedException {
+        Thread.sleep(3000);
+    }
 }
