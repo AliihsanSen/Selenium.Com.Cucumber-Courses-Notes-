@@ -92,6 +92,6 @@ public class AmazonStepDefinition {
 
     @Then("Kullanici {int} saniye bekler")
     public void kullaniciSaniyeBekler(int istenenSure) throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(istenenSure);
     }
 }
