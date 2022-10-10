@@ -12,6 +12,7 @@ Feature: Parametre Kullanimi
   Scenario: Parametre Kullaniminda ConfigReader Kullanimi (facebook)
 
     Given Kullanici "faceUrl" sayfasina gider
+    Then Kullanici 1 saniye bekler
     When Url'nin "facebook" icerdigini test eder
     And Sayfayi kapatir.
 
