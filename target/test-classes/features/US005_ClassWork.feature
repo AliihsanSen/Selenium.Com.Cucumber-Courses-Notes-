@@ -6,6 +6,8 @@ Feature: US1009 Ck Hotels Login
     Then Login yazisina tiklar
     And gecersiz username girer
       And gecersiz password girer
-      And Login butonuna basar
+    Then Kullanici 2 saniye bekler
+    And Login butonuna basar
     Then sayfaya giris yapilamadigini kontrol eder
+    Then Kullanici 2 saniye bekler
     And kulllanici sayfayi kapatir
