@@ -1,8 +1,8 @@
 Feature: US1009 Ck Hotels Login
 
   Scenario: TC11 kullanici gecerli bilgilerle giris yapar
-    Given kullanici "bluerentacar" ana sayfasinda
-    Then Kullanici 1 saniye bekler
+    Given kullanici "brcUrl" ana sayfasinda
+    Then Kullanici 2 saniye bekler
     Then Login yazisina tiklar
     And gecersiz username girer
       And gecersiz password girer
