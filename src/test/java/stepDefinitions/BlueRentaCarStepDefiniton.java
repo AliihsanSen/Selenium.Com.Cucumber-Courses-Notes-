@@ -3,10 +3,17 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pages.BrcPage;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class BlueRentaCarStepDefiniton {
+
+    BrcPage brcPage = new BrcPage();
+
     @Given("kullanici bluerentacar ana sayfasinda")
     public void kullaniciBluerentacarAnaSayfasinda() {
+        Driver.getDriver().get(ConfigReader.getProperties("brcUrl"));
     }
 
     @Then("Login yazisina tiklar")
