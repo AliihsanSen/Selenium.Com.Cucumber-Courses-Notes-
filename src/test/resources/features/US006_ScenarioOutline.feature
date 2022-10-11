@@ -1,4 +1,17 @@
 
   Feature: US006 Kullanıcı amazonda istediği kelimeleri aratir
 
-    Scenario Outline:
+    Scenario Outline: TC01 Kullanıcı istediği kelimeleri aratir
+
+      Given Kullanici amazon sayfasina gider
+      Then Kullanici "<istenenKelime>" icin arama aratir
+      And sonuclarin "<istenenKelimeKontrol>" icerdigini test eder
+      And Sayfayi kapatir.
+
+      Examples:
+        | nutella | nutella |
+        | selenium | selenium |
+        | java | java |
+        | sql | sql |
+
+
