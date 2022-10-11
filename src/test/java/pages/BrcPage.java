@@ -25,4 +25,7 @@ public class BrcPage {
 
     @FindBy(xpath = "//*[@id='dropdown-basic-button']")
     public WebElement basariliGiris;
+
+    @FindBy(xpath = "//*[text()='email must be a valid email']")
+    public WebElement basarisizGiris;
 }

@@ -1,6 +1,8 @@
-stepDefinitions\HepsiBuradaStepDefinition.class
 pages\AmazonPage.class
 stepDefinitions\AmazonStepDefinition.class
-utilities\ConfigReader.class
 runners\Runner.class
+stepDefinitions\BlueRentaCarStepDefiniton.class
 utilities\Driver.class
+pages\BrcPage.class
+stepDefinitions\HepsiBuradaStepDefinition.class
+utilities\ConfigReader.class
