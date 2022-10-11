@@ -14,5 +14,7 @@
         | java | java |
         | sql | sql |
 
+# TestNG deki dataProvider kullanimindaki gibi Cucumberda da Scenario Outline kullaniriz.
+# Bu şekilde birden fazla kelimeyi tek seferde aratabiliriz.
 
 
