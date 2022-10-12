@@ -1,5 +1,7 @@
 @PracticeAmazon
 Feature: Amazon Practice
+
+  @PracticeAmazonTC01
   Scenario: Amazon Sign in Test
 
     Given kullanici Amazon web sitesine gider
