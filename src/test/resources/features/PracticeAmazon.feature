@@ -5,7 +5,7 @@ Feature: Amazon Practice
     Given kullanici Amazon web sitesine gider
     When sign in butonuna tiklar
     And faker kullanarak e-posta gonderir
-    And gonderdigi e-postanın ekran goruntusunu alir
+    And gonderdigi e-postanin ekran goruntusunu alir
     And continiue'a tiklar
     Then There was a problem mesajini dogrular
     And Need help e tiklar
