@@ -10,7 +10,7 @@ import org.openqa.selenium.opera.OperaDriver;
 
 import java.time.Duration;
 
-public class Driver {
+public class Driver  {
 
     private Driver() {
     }

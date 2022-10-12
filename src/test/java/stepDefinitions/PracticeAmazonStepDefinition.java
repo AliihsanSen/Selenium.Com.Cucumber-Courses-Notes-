@@ -1,60 +1,90 @@
 package stepDefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import pages.PracticeAmazonPage;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class PracticeAmazonStepDefinition {
+    PracticeAmazonPage practiceAmazonPage = new PracticeAmazonPage();
+
+        //Faker faker = new Faker();
+
     @Given("kullanici Amazon web sitesine gider")
-    public void kullaniciAmazonWebSitesineGider() {
-    }
+    public void kullanici_amazon_web_sitesine_gider() {
+        Driver.getDriver().get(ConfigReader.getProperties("amazonUrl"));
 
+    }
     @When("sign in butonuna tiklar")
-    public void signInButonunaTiklar() {
+    public void sign_in_butonuna_tiklar() {
+        practiceAmazonPage.signinButton.click();
     }
-
-    @And("faker kullanarak e-posta gonderir")
-    public void fakerKullanarakEPostaGonderir() {
+    @When("faker kullanarak e-posta gonderir")
+    public void faker_kullanarak_e_posta_gonderir() {
+        //    practiceAmazonPage.emailBox.sendKeys(faker.internet().emailAddress());
+        practiceAmazonPage.emailBox.sendKeys(Faker.instance().internet().emailAddress());
     }
+    @When("gonderdigi e-postanin ekran goruntusunu alir")
+    public void gonderdigi_e_postanin_ekran_goruntusunu_alir() throws IOException, IOException {
 
-    @And("gonderdigi e-postanin ekran goruntusunu alir")
-    public void gonderdigiEPostaninEkranGoruntusunuAlir() {
+        ReusableMethods.getScreenshotWebElement("FakeEmail",practiceAmazonPage.emailBox);
+
     }
+    @When("continiue'a tiklar")
+    public void continiue_a_tiklar() {
+        practiceAmazonPage.continiueButton.click();
 
-    @And("continiue'a tiklar")
-    public void continiueATiklar() {
     }
-
     @Then("There was a problem mesajini dogrular")
-    public void thereWasAProblemMesajiniDogrular() {
-    }
+    public void there_was_a_problem_mesajini_dogrular() {
+        String expectedText="There was a problem";
+        String actualText =practiceAmazonPage.problemMessage.getText();
+        Assert.assertEquals("Problem Mesajı Esit Değil",expectedText,actualText);
 
-    @And("Need help e tiklar")
-    public void needHelpETiklar() {
     }
+    @Then("Need help e tiklar")
+    public void need_help_e_tiklar() {
+        practiceAmazonPage.needHelp.click();
 
-    @And("forgot your password e tiklar")
-    public void forgotYourPasswordETiklar() {
     }
+    @Then("forgot your password e tiklar")
+    public void forgot_your_password_e_tiklar() {
+        practiceAmazonPage.forgotPasswordLink.click();
 
-    @And("Password assistance metnini dogrular")
-    public void passwordAssistanceMetniniDogrular() {
     }
+    @Then("Password assistance metnini dogrular")
+    public void password_assistance_metnini_dogrular() {
+        Assert.assertTrue(practiceAmazonPage.passwordAssistanceText.isDisplayed());
 
-    @And("Geri gider")
-    public void geriGider() {
     }
+    @Then("Geri gider")
+    public void geri_gider() {
+        Driver.getDriver().navigate().back();
+        Driver.getDriver().navigate().back();
 
-    @And("Create your account butonuna tiklar")
-    public void createYourAccountButonunaTiklar() {
     }
-
+    @Then("Create your account butonuna tiklar")
+    public void create_your_account_butonuna_tiklar() {
+        practiceAmazonPage.createYourAccountButton.click();
+    }
     @Then("Create account metnini dogrular")
-    public void createAccountMetniniDogrular() {
-    }
+    public void create_account_metnini_dogrular() {
+        Assert.assertTrue("Create Account Text içermiyor",practiceAmazonPage.createAccountText.getText().contains("Create account"));
 
-    @And("websayfasini kapatir")
-    public void websayfasiniKapatir() {
+    }
+    @Then("websayfasini kapatir")
+    public void websayfasini_kapatir() {
+        Driver.quitDriver();
+
     }
 }
+
+

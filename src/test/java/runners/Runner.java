@@ -3,16 +3,17 @@ package runners;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+import utilities.ReusableMethods;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@Background", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
+        tags = "@PracticeAmazon", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
         dryRun = false
 )
 
-public class Runner {
+public class Runner extends ReusableMethods {
 
 /**
 Runner Class'ı TestNG'deki XMl mantığı ile çalışır. Çalıştırmak istediğimiz senartolara tag belirtiriz

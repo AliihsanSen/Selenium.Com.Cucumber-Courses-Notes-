@@ -12,8 +12,7 @@ public class PracticeAmazonPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
-    @FindBy(xpath = "//a[@id='nav-link-accountList']")
+    @FindBy (xpath = "//a[@id='nav-link-accountList']")
     public WebElement signinButton;
 
     @FindBy (xpath = "//input[@id='ap_email']")
@@ -39,4 +38,5 @@ public class PracticeAmazonPage {
 
     @FindBy (xpath = "//h1")
     public WebElement createAccountText;
+
 }
