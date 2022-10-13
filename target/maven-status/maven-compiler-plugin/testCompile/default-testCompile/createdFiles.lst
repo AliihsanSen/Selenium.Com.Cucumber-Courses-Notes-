@@ -10,5 +10,6 @@ utilities\ReusableMethods.class
 pages\AmazonPage.class
 runners\Runner.class
 utilities\Driver.class
+stepDefinitions\Hooks.class
 utilities\ConfigReader.class
 stepDefinitions\GuruStepDefinition.class
