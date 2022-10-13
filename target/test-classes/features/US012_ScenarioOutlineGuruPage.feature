@@ -1,4 +1,4 @@
-Feature: US012 Class Work
+Feature: US011 Class Work
 
   Scenario Outline:TC01 Kullanıcı sütun basligi ile liste alabilmeli
     Given Kullanici "guruUrl" sayfasina gider
