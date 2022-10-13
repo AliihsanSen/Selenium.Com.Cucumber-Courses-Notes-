@@ -52,4 +52,5 @@ public class BlueRentaCarStepDefiniton {
     public void kullaniciAnaSayfasinda(String istenenUrl) {
         Driver.getDriver().get(ConfigReader.getProperties(istenenUrl));
     }
+    fsad
 }
