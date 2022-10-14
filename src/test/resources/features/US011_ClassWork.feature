@@ -14,3 +14,4 @@ Feature: US014 Class Work
     And kullanici Ok diyerek Popup'i kapatir
     And kullanici ilk sayfaya geri doner
     And kullanici ilk sayfaya donuldugunu test eder
+    And Sayfayi kapatir.
