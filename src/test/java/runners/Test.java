@@ -12,9 +12,9 @@ import utilities.ReusableMethods;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@gp2",
+        tags = "@web",
         dryRun = false
 )
 
-public class TestRunner extends ReusableMethods {
+public class Test extends ReusableMethods {
 }
