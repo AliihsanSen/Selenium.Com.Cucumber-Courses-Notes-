@@ -12,7 +12,7 @@ import utilities.ReusableMethods;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@web",
+        tags = "@auto",
         dryRun = false
 )
 
