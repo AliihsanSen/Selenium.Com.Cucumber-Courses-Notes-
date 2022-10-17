@@ -16,5 +16,5 @@ import utilities.ReusableMethods;
         dryRun = false
 )
 
-public class TestRunner extends ReusableMethods {
+public class TestRun extends ReusableMethods {
 }

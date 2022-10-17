@@ -7,13 +7,15 @@ pages\PracticeAmazonPage.class
 stepDefinitions\PracticeAmazonStepDefinition.class
 pages\BrcPage.class
 stepDefinitions\HepsiBuradaStepDefinition.class
+runners\TestRunn.class
+runners\TestRun.class
 utilities\ReusableMethods.class
+pages\AutoPage.class
 pages\AmazonPage.class
 runners\Runner.class
-runners\TestRunner.class
+stepDefinitions\AutoStepDefinition.class
 utilities\Driver.class
 stepDefinitions\Hooks.class
 stepDefinitions\WebDriverStepDefinition.class
-runners\TestRunner2.class
 utilities\ConfigReader.class
 stepDefinitions\GuruStepDefinition.class
