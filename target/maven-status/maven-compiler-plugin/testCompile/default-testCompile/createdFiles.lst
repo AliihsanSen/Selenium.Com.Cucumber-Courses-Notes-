@@ -7,8 +7,10 @@ pages\PracticeAmazonPage.class
 stepDefinitions\PracticeAmazonStepDefinition.class
 pages\BrcPage.class
 stepDefinitions\HepsiBuradaStepDefinition.class
+runners\RunnerGrid.class
 runners\TestRunn.class
 runners\TestRun.class
+stepDefinitions\GridStepDefs.class
 utilities\ReusableMethods.class
 pages\AutoPage.class
 pages\AmazonPage.class
